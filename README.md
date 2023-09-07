@@ -18,3 +18,8 @@ To install this project, all you need to do is download the requirements.txt fil
 To install, run this command in the terminal
 ```shell
 pip install -r requirements.txt
+```
+Then, you can run the file with
+```shell
+python main.py
+```
