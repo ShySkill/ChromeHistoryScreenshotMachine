@@ -12,7 +12,9 @@ Explain how to use your project or provide code examples. You can use bullet poi
 
 ### Installation
 
-If your project has installation steps, include them here.
+To install this project, all you need to do is download the requirements.txt file with all of the required packages and imports. 
 
+#### Commands
+To install, run this command in the terminal
 ```shell
-pip install my_project
+pip install -r requirements.txt
