@@ -1,18 +1,15 @@
-# My Project
+# Chrome History Screenshot Machine
 
-This is a simple README.md template for your project. You can use this file to provide an overview of your project, its purpose, and how to use it.
+The Chrome History Screenshot Machine is a script that will open chrome from a users device, take as many screenshots as desired of the history page (chrome://history), and send to a discord webhook through a byte stream, aswell as send other diagnostic and statistical data about the machine. You can make an Exe version with pyinstaller, but I would not recommend it as this is not intended for malicious purposes, and the exe will be too slow.
 
-## Introduction
+## How to use
 
-In this section, you can introduce your project and describe its main goals or objectives. Provide a brief overview of what your project does and why it's valuable.
-
-## Usage
-
-Explain how to use your project or provide code examples. You can use bullet points, code blocks, and other Markdown formatting as needed.
+To run, install the required packages, and follow the steps below.
 
 ### Installation
 
-To install this project, all you need to do is download the requirements.txt file with all of the required packages and imports. 
+To install this project, all you need to do is download the requirements.txt file with all of the required packages and imports.
+WARNING: Make sure that you put a valid discord webhook before running, or the project will not function as intended.
 
 #### Commands
 To install, run this command in the terminal
@@ -23,3 +20,5 @@ Then, you can run the file with
 ```shell
 python main.py
 ```
+
+Dm shyskill on discord for specifications
