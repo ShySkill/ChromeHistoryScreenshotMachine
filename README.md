@@ -1,4 +1,4 @@
-# Chrome History Screenshot Machine
+# Chrome History Screenshot Machine <img src="chromelogo.png" alt="Chrome logo" width="50" height="50">
 
 The Chrome History Screenshot Machine is a script that will open chrome from a users device, take as many screenshots as desired of the history page (chrome://history), and send to a discord webhook through a byte stream, aswell as send other diagnostic and statistical data about the machine. You can make an exe version with pyinstaller, but I would not recommend it as this is not intended for malicious purposes, and the exe will be too slow.
 
