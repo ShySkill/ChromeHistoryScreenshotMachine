@@ -9,7 +9,7 @@ To run, install the required packages, and follow the steps below.
 ### Installation
 
 To install this project, all you need to do is download the requirements.txt file with all of the required packages and imports.
-WARNING: Make sure that you put a valid discord webhook URL before running, or the project will not function as intended.
+WARNING: Make sure that you put a valid discord webhook URL when prompted, or the project will not function as intended.
 
 #### Commands
 To install, run this command in the terminal
