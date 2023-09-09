@@ -7,7 +7,7 @@ The Chrome History Screenshot Machine is a script that will open chrome from a u
 To run, install the required packages, and follow the steps below.
 
 ### Installation
-Make sure you have python installed
+Firstly, make sure you have python installed.
 To install this project, all you need to do is download the requirements.txt file with all of the required packages and imports.
 WARNING: Make sure that you put a valid discord webhook URL when prompted, or the project will not function as intended.
 
